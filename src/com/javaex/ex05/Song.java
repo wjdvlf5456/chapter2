@@ -40,7 +40,7 @@ public class Song {
 		
 	}
 	
-	//get
+	//get	showInfo 사용 시 적용 안 됨
 	/*
 	public getArtist(String art) {
 		return artist;
@@ -78,7 +78,7 @@ public class Song {
 		System.out.print(year+", ");
 		System.out.print(track+"번 track, ");
 		System.out.print(composer+" 작곡 )");
-		
+		System.out.println("");
 	}
 	
 	
