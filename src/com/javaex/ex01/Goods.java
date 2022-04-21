@@ -2,8 +2,8 @@ package com.javaex.ex01;
 
 public class Goods {
 	
-	String name;
-	int price;
+	private String name;
+	private int price;
 	
 
 }
