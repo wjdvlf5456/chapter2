@@ -20,14 +20,19 @@ public class Goods {
 	public String getName() {
 		return name;
 	}
-	
-	public int getPrice () {
+
+	public int getPrice() {
 		return price;
-		
-		
+
 	}
-	
 
 	// method 일반
+	public void showInfo() {
+
+		System.out.println("상품이름: " + name);
+		System.out.println("가격: " + price);
+		System.out.println("");
+
+	}
 
 }
