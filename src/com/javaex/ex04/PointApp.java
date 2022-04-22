@@ -25,6 +25,10 @@ public class PointApp {
 		p2.draw();
 		p3.draw();
 		p4.draw();
+		
+		p1.draw(true);	//그리기
+		p1.draw(false);	//지우기
+		
 
 	}
 
