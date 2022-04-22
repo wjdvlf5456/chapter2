@@ -22,7 +22,6 @@ public class Goods {
 			this.price = price;
 			
 		}
-		
 	}
 
 	public String getName() {

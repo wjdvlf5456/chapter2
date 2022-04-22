@@ -9,66 +9,53 @@ public class Song {
 	private int track;
 	private String composer;
 	
-	//set
-	public void setArtist(String art) {
-		artist=art;
-		
-	}
-	
-	public void setTitle(String tit) {
-		title = tit;
-		
-	}
-	
-	public void setAlbum(String alb) {
-		album = alb;
-		
-	}
-	
-	public void setYear(int yea) {
-		year=yea;
-		
-	}
-	
-	public void setTrack(int tra) {
-		track = tra;
-		
-	}
-	
-	public void setComposer(String comp) {
-		composer=comp;
-		
-	}
-	
-	//get	showInfo 사용 시 적용 안 됨
-	
+	//artist
 	public String getArtist() {
 		return artist;
-		
+	}
+	
+	public void setArtist(String artist) {
+		this.artist = artist;
 	}
 	
 	public String getTitle() {
 		return title;
-		
+	}
+	
+	public void setTitle(String title) {
+		this.title = title;
 	}
 	
 	public String getAlbum() {
 		return album;
-		
+	}
+	
+	public void setAlbum(String album) {
+		this.album = album;
 	}
 	
 	public int getYear() {
 		return year;
 	}
 	
+	public void setYear(int year) {
+		this.year = year;
+	}
+	
 	public int getTrack() {
 		return track;
-		
+	}
+	
+	public void setTrack(int track) {
+		this.track = track;
 	}
 	
 	public String getComposer() {
 		return composer;
-		
+	}
+	
+	public void setComposer(String composer) {
+		this.composer = composer;
 	}
 	
 	public void showInfo() {
@@ -80,10 +67,5 @@ public class Song {
 		System.out.print(composer+" 작곡 )");
 		System.out.println("");
 	}
-	
-	
-	
-	
-	
 
 }
