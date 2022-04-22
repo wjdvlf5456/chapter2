@@ -14,7 +14,15 @@ public class Goods {
 	}
 
 	public void setPrice(int price) {
-		this.price = price;
+		
+		if (price < 0) {
+			this.price = 0;
+			
+		} else {
+			this.price = price;
+			
+		}
+		
 	}
 
 	public String getName() {
