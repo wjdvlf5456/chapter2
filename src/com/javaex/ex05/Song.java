@@ -41,36 +41,36 @@ public class Song {
 	}
 	
 	//get	showInfo 사용 시 적용 안 됨
-	/*
-	public getArtist(String art) {
+	
+	public String getArtist() {
 		return artist;
 		
 	}
 	
-	public getTitle(String tit) {
+	public String getTitle() {
 		return title;
 		
 	}
 	
-	public getAlbum(String alb) {
+	public String getAlbum() {
 		return album;
 		
 	}
 	
-	public getYear(int yea) {
+	public int getYear() {
 		return year;
 	}
 	
-	public getTrack(int tra) {
+	public int getTrack() {
 		return track;
 		
 	}
 	
-	public getComposer(String comp) {
+	public String getComposer() {
 		return composer;
 		
 	}
-	*/
+	
 	public void showInfo() {
 		System.out.print(artist+", ");
 		System.out.print(title+" (");
