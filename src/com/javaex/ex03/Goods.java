@@ -9,12 +9,12 @@ public class Goods {
 	// 생성자
 
 	// method -gettersetter
-	public void setName(String n) {
-		name = n;
+	public void setName(String name) {
+		this.name = name;
 	}
 
-	public void setPrice(int p) {
-		price = p;
+	public void setPrice(int price) {
+		this.price = price;
 	}
 
 	public String getName() {
