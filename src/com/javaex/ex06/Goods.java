@@ -8,10 +8,23 @@ public class Goods {
 	
 	
 	//생성자
-	public Goods() {
-		//********메모리에 올리는 일
+	public Goods() {	//기본생성자
+		//********메모리에 올리는 일 (클래스를 인스턴스에 올리는 일)
 		//로직
-		System.out.println("Goods()");
+		
+	}
+	
+	public Goods(String name) {
+		//********메모리에 올리는 일 (클래스를 인스턴스에 올리는 일)
+		//추가로직
+		this.name = name;
+	}
+	
+	public Goods(String name, int price) {
+		//********메모리에 올리는 일 (클래스를 인스턴스에 올리는 일)
+		//추가로직
+		this.name = name;
+		this.price = price;
 		
 	}
 	
