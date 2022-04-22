@@ -11,13 +11,13 @@ public class Point {
 	//생성자
 	
 	//set
-	public void setX(int X) {
-		x = X;
+	public void setX(int x) {
+		this.x = x;
 	}
 
 
-	public void setY(int Y) {
-		y = Y;
+	public void setY(int y) {
+		this.y = y;
 
 	}
 	
