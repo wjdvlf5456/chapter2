@@ -12,7 +12,7 @@ public class TV {
 
 	}
 	
-	public TV(int channel) {
+	public TV(int channel, int volume) {
 		if (channel<1) {
 			this.channel = 255;
 		} else if (channel>255){
@@ -20,7 +20,14 @@ public class TV {
 		} else {
 			this.channel=channel;
 		}
-		
+	
+		if (volume<1) {
+			this.volume=0;
+		} else if(volume>100){
+			this.volume=100;
+		} else {
+			this.volume=volume;
+		}
 	}
 
 	public TV(int channel, int volume, boolean power) {
