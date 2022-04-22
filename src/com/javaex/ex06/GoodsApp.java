@@ -4,6 +4,9 @@ public class GoodsApp {
 	
 	public static void main(String[] args) {
 		
+		//Goods computer = new Goods("LG그램", 900000);
+		//Goods camera = new Goods("니콘", 400000);
+		
 		Goods computer = new Goods();
 		computer.setName("LG그램");
 		computer.setPrice(900000);
@@ -15,7 +18,6 @@ public class GoodsApp {
 		Goods cup = new Goods();
 		cup.setName("머그컵");
 		cup.setPrice(2000);
-		
 		
 		
 		System.out.println(computer.toString());

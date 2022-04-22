@@ -8,7 +8,12 @@ public class Goods {
 	
 	
 	//생성자
-	
+	public Goods() {
+		//********메모리에 올리는 일
+		//로직
+		System.out.println("Goods()");
+		
+	}
 	
 	//메소드 gs
 	public String getName() {
@@ -37,9 +42,5 @@ public class Goods {
 	public String toString() {
 		return "Goods [name=" + name + ", price=" + price + "]";
 	}
-	
-	
-	
-	
 
 }
