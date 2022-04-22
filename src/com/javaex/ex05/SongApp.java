@@ -12,13 +12,17 @@ public class SongApp {
 		iu.setTrack(3);
 		iu.setComposer("이민수");
 		
-		Song bigbang = new Song();
+		Song bigbang = new Song("BIGBNAG", "거짓말", "Always", 2007, 2, "G-DRAGON");
+		/*
 		bigbang.setArtist("BIGBNAG");
 		bigbang.setTitle("거짓말");
 		bigbang.setAlbum("Always");
 		bigbang.setYear(2007);
 		bigbang.setTrack(2);
 		bigbang.setComposer("G-DRAGON");
+		*/
+		
+		
 		
 		Song buskerbusker = new Song();
 		buskerbusker.setArtist("버스커버스커");
