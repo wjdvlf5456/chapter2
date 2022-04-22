@@ -29,6 +29,14 @@ public class TV {
 			this.volume=volume;
 		}
 	}
+	
+	public TV(boolean power) {
+		if (power=true) {
+			this.power=false;
+		} else {
+			this.power=true;
+		}
+	}
 
 	public TV(int channel, int volume, boolean power) {
 		this.channel = channel;
