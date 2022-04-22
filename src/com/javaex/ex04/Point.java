@@ -8,26 +8,34 @@ public class Point {
 	private int x;
 	private int y;
 	
+	//생성자
+	
 	//set
-	public void setNum1(int ppp) {
-		x = ppp;
+	public void setX(int X) {
+		x = X;
 	}
 
 
-	public void setNum2(int ooo) {
-		y = ooo;
+	public void setY(int Y) {
+		y = Y;
 
 	}
 	
 	
-	//get	여기서 get값을 PointApp으로 넘기나
-	public int getNum1() {
+	//get	여기서 get값을 PointApp으로 넘긴다.
+	public int getX() {
 		return x;
 		
 	}
 
-	public int getNum2() {
+	public int getY() {
 		return y;
+		
+	}
+	
+	//메소드 일반
+	public void draw() {
+		System.out.println("점[x="+x+", y="+y+"]을 그렸습니다.");
 		
 	}
 
