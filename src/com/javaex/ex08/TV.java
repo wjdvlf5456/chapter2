@@ -13,6 +13,13 @@ public class TV {
 	}
 	
 	public TV(int channel, int volume) {
+	}
+	
+	public TV(boolean power) {
+	}
+
+	public TV(int channel, int volume, boolean power) {
+		
 		if (channel<1) {
 			this.channel = 255;
 		} else if (channel>255){
@@ -20,7 +27,7 @@ public class TV {
 		} else {
 			this.channel=channel;
 		}
-	
+		
 		if (volume<1) {
 			this.volume=0;
 		} else if(volume>100){
@@ -28,20 +35,12 @@ public class TV {
 		} else {
 			this.volume=volume;
 		}
-	}
-	
-	public TV(boolean power) {
-		if (power=true) {
-			this.power=false;
+		
+		if (power=false) {
+			this.power=true;
 		} else {
 			this.power=true;
 		}
-	}
-
-	public TV(int channel, int volume, boolean power) {
-		this.channel = channel;
-		this.volume = volume;
-		this.power = power;
 	}
 
 	// 메소드 - gs

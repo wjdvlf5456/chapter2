@@ -11,14 +11,7 @@ public class TVApp {
 			tv.setVolume(20);
 			tv.setPower(false);
 			
-			
-			
-			
-			
 			tv.status();
-		
-		
-			
 			
 			System.out.println(tv.toString());
 			
