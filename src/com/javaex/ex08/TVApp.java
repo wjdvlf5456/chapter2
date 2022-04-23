@@ -9,16 +9,22 @@ public class TVApp {
 		
 			
 			Scanner sc = new Scanner(System.in);
+			
+			
+			TV tv = new TV(7, 20, false);
+			System.out.println("전원을 켜시겠습니까?");
 				
-				TV tv = new TV(7, 20, false);
+			tv.power(sc.nextBoolean());
+			System.out.print("채널변경: ");
+			tv.channel(sc.nextBoolean());
+			System.out.print("볼륨변경:");
+			tv.volume(sc.nextBoolean());
+			
+			
+			tv.status();
 				
-				
-				
-				tv.channel(false);
-				tv.status();
-				
-				System.out.println(tv.toString());
-				
+			System.out.println(tv.toString());
+			
 			sc.close();
 			
 	}

@@ -33,32 +33,41 @@ public class TV {
 
 
 	// 메소드 - 일반]
-	
-	
 	public void channel(int channel) {
 		//1에서 255유지
+		if (channel<1) {
+			this.channel = 255;
+		} else if (channel>255){
+			this.channel = 1;
+		} else {
+			this.channel=channel;
+		}
+
 	}
 	
 	public void volume(int volume) {
 		//0에서 100유지
+		if (volume<1) {
+			this.volume=0;
+		} else if(volume>100){
+			this.volume=100;
+		} else {
+			this.volume=volume;
+		}
 	}
 	
  	
 	public void power(boolean on) {
 		
-		if (power=true) {
-			this.power=false;
-			System.out.println("this.power"+this.power+"\t"+power);
+		if (on=true) {
+			this.power=true;
 		} else {
 			this.power=false;
-
 		}
-		
 	}
 	
 	public void channel(boolean up) {
 		//1~255유지, 1씩 증감
-		
 		if (up=true) {
 			this.channel = channel+1;
 		} else {
@@ -68,7 +77,6 @@ public class TV {
 	
 	public void volume(boolean up) {
 		//1~100유지 1씩 증감
-		
 		if (up=true) {
 			this.volume = volume+1;
 		} else {
@@ -89,25 +97,3 @@ public class TV {
 	}
 
 }
-/*
-if (channel<1) {
-	this.channel = 255;
-} else if (channel>255){
-	this.channel = 1;
-} else {
-	this.channel=channel;
-}
-
-if (volume<1) {
-	this.volume=0;
-} else if(volume>100){
-	this.volume=100;
-} else {
-	this.volume=volume;
-}
-
-if (power=false) {
-	this.power=true;
-} else {
-	this.power=false;
-}*/
