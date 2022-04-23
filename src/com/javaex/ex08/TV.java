@@ -9,52 +9,19 @@ public class TV {
 
 	// 생성자
 	public TV() {
-
+			
 	}
+	 
 	
-	public TV(int channel, int volume) {
-	}
-	
-	public TV(boolean power) {
-	}
-
 	public TV(int channel, int volume, boolean power) {
-		
-		if (channel<1) {
-			this.channel = 255;
-		} else if (channel>255){
-			this.channel = 1;
-		} else {
-			this.channel=channel;
-		}
-		
-		if (volume<1) {
-			this.volume=0;
-		} else if(volume>100){
-			this.volume=100;
-		} else {
-			this.volume=volume;
-		}
-		
-		if (power=false) {
-			this.power=true;
-		} else {
-			this.power=true;
-		}
+		this.channel=channel;
+		this.volume=volume;
+		this.power=power;
+
 	}
+	
 
 	// 메소드 - gs
-	public void setChannel(int channel) {
-		this.channel = channel;
-	}
-	
-	public void setVolume(int volume) {
-		this.volume = volume;
-	}
-	
-	public void setPower(boolean power) {
-		this.power = power;
-	}
 
 	public int getChannel() {
 		return channel;
@@ -64,36 +31,52 @@ public class TV {
 		return volume;
 	}
 
-	public boolean getPower() {
-		return power;
-	}
 
-
-
-	// 메소드 - 일반
-	/*
- 	
-	public void power(boolean power) {
-		
-	}
+	// 메소드 - 일반]
+	
 	
 	public void channel(int channel) {
-	
-	}
-	
-	public void channel(boolean up) {
-		
-	
+		//1에서 255유지
 	}
 	
 	public void volume(int volume) {
+		//0에서 100유지
+	}
 	
+ 	
+	public void power(boolean on) {
+		
+		if (power=true) {
+			this.power=false;
+			System.out.println("this.power"+this.power+"\t"+power);
+		} else {
+			this.power=false;
+
+		}
+		
+	}
+	
+	public void channel(boolean up) {
+		//1~255유지, 1씩 증감
+		
+		if (up=true) {
+			this.channel = channel+1;
+		} else {
+			this.channel = channel-1;
+		}
 	}
 	
 	public void volume(boolean up) {
+		//1~100유지 1씩 증감
+		
+		if (up=true) {
+			this.volume = volume+1;
+		} else {
+			this.volume = volume-1;
+		}
 	
 	}
-	*/
+	
 	//정보출력
 	@Override
 	public String toString() {
@@ -101,8 +84,30 @@ public class TV {
 	}
 	
 	public void status() {
-		System.out.println("채널: "+channel+"\t볼륨: "+volume+" 입니다.");
+		System.out.println("채널: "+channel+"번"+"\t볼륨: "+volume+" 입니다.");
 	
 	}
 
 }
+/*
+if (channel<1) {
+	this.channel = 255;
+} else if (channel>255){
+	this.channel = 1;
+} else {
+	this.channel=channel;
+}
+
+if (volume<1) {
+	this.volume=0;
+} else if(volume>100){
+	this.volume=100;
+} else {
+	this.volume=volume;
+}
+
+if (power=false) {
+	this.power=true;
+} else {
+	this.power=false;
+}*/
