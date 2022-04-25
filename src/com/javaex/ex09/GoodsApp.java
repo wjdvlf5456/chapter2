@@ -12,15 +12,25 @@ public class GoodsApp {
 		goodsArray[0] = camera;
 		goodsArray[1] = computer;
 		goodsArray[2] = cup;
-
+		
+		
+		System.out.println("============================================");
 		System.out.println(goodsArray[0].getName());
 		System.out.println(goodsArray[2].getPrice());
 		System.out.println(goodsArray[1].toString());
 		
 
+		System.out.println("============================================");
 		goodsArray[0].showInfo();
 		goodsArray[1].showInfo();
 		goodsArray[2].showInfo();
+		
+		System.out.println("============================================");
+		
+		for (int i = 0; i < goodsArray.length; i++) {
+			goodsArray[i].showInfo();
+			
+		}
 
 	}
 
