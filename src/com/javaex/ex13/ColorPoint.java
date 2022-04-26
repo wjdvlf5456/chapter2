@@ -6,7 +6,7 @@ public class ColorPoint extends Point {
 	private String color;
 
 	// 생성자
-	public ColorPoint() {
+	public ColorPoint() {		//여기서는 기본생성자가 사용되지 않아 사실 필요없다.
 
 	}
 
