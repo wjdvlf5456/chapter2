@@ -25,6 +25,7 @@ public class PersonApp {
 		System.out.println(s03.getName());
 		System.out.println(s03.toString());
 		
+		s03.showInfo();
 		
 
 	}

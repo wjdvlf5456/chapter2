@@ -39,7 +39,7 @@ public class Person {
 	// 메소드 일반
 	public void showInfo() {
 
-		System.out.println("이름: " + name + ", 나이: " + age);
+		System.out.print("이름: " + name + ", 나이: " + age);
 	}
 
 	@Override
