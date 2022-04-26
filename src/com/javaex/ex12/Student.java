@@ -36,6 +36,7 @@ public class Student extends Person {
 
 	// 메소드 - 일반
 	public void showInfo() {
+		//부모 showInfo 그대로 사용 
 		super.showInfo();
 		System.out.println(", 학교: " + schoolName);
 
