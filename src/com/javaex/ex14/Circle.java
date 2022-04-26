@@ -12,9 +12,10 @@ public class Circle {
 		
 	}
 	
-	public Circle (String fillColor, String lineColor) {
+	public Circle (String fillColor, String lineColor, int radius) {
 		this.fillColor = fillColor;
 		this.lineColor = lineColor;
+		this.radius = radius;
 	}
 
 	//메소드 - gs

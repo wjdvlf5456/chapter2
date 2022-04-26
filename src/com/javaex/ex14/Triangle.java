@@ -13,9 +13,11 @@ public class Triangle {
 
 	}
 
-	public Triangle(String fillColor, String lineColor) {
+	public Triangle(String fillColor, String lineColor, int width, int height) {
 		this.fillColor = fillColor;
 		this.lineColor = lineColor;
+		this.width = width;
+		this.height = height;
 	}
 
 	// 메소드 - gs
