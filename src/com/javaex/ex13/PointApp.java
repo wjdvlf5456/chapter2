@@ -12,7 +12,8 @@ public class PointApp {
 
 		ColorPoint cp2 = new ColorPoint(10, 10, "blue");	// 부모는 추가 생성자, 자식은 3개사용
 
-		p.showInfo();
+		p.showInfo();		
+		
 		cp1.showInfo();
 		cp2.showInfo();
 
