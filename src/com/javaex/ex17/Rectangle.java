@@ -58,6 +58,7 @@ public class Rectangle extends Shape{
 
 	public double area() {
 		double area = width * height;
+		System.out.println(area);
 		return area;
 	}
 

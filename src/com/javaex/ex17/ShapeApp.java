@@ -16,6 +16,9 @@ public class ShapeApp {
 		
 		for (int i = 0; i < shape.length; i++) {
 			shape[i].draw();
+		}
+		
+		for (int i = 0; i < shape.length; i++) {
 			shape[i].area();
 		}
 		
